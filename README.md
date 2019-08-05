@@ -52,7 +52,6 @@ app.get('/', (_req, res) => {
     message: 'Home route comes before boltwall and so is unprotected.',
   })
 })
-
 app.use(boltwall())
 app.get('/protected', (_req, res) =>
   res.json({
